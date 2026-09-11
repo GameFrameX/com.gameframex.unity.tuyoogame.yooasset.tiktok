@@ -2,12 +2,17 @@
 
 <img src="https://download.alianblank.com/gameframex/gameframex_logo_320.png" alt="Game Frame X Logo" width="160" />
 
-# Game Frame X YooAsset MiniGame TikTok
+# Game Frame X YooAsset TikTok
 
-[![License](https://img.shields.io/github/license/GameFrameX/com.gameframex.unity.tuyoogame.yooasset.minigame.tiktok)](https://github.com/GameFrameX/com.gameframex.unity.tuyoogame.yooasset.minigame.tiktok/blob/main/LICENSE.md)
-[![Version](https://img.shields.io/github/v/release/GameFrameX/com.gameframex.unity.tuyoogame.yooasset.minigame.tiktok)](https://github.com/GameFrameX/com.gameframex.unity.tuyoogame.yooasset.minigame.tiktok/releases)
+[![License](https://img.shields.io/badge/license-blue.svg)](LICENSE.md)
+[![Version](https://img.shields.io/github/v/release/gameframex/com.gameframex.unity.tuyoogame.yooasset.tiktok)](https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.tiktok/releases)
 [![Unity Version](https://img.shields.io/badge/Unity-2019.4-black?logo=unity)](https://unity.com/)
 [![Documentation](https://img.shields.io/badge/Documentation-docs-blue)](https://gameframex.doc.alianblank.com)
+
+[![Discord](https://img.shields.io/badge/-5865F2?logo=discord&logoColor=white)](https://discord.gg/VDWUjWMDw9)
+[![GitHub](https://img.shields.io/badge/-181717?logo=github&logoColor=white)](https://github.com/GameFrameX/gameframex)
+[![Bilibili](https://img.shields.io/badge/-00A1D6?logo=bilibili&logoColor=white)](https://www.bilibili.com/video/BV1yrpeepEn7)
+[![Gitee](https://img.shields.io/badge/-C71D23?logo=gitee&logoColor=white)](https://gitee.com/GameFrameX/gameframex)
 
 独立游戏前后端一体化解决方案 · 独立游戏开发者的圆梦大使
 
@@ -23,21 +28,14 @@
 
 ## 项目简介
 
-GameFrameX 的 YooAsset 抖音小游戏（TikTok MiniGame）运行时组件，面向 Unity WebGL 平台，提供与抖音小游戏文件系统、资源包加载流程的适配实现。
+本包为 Unity WebGL 上的 TikTok 小游戏提供 YooAsset IFileSystem 适配实现。
 
 ## 功能特性
 
-- 提供抖音小游戏专用的 IFileSystem 实现
-- 适配 TTSDK 的 AssetBundle 下载与缓存流程
+- 提供 TikTok 小游戏专用的 IFileSystem 实现
+- 对接 SDK 的 AssetBundle 下载与缓存流程
 - 支持包版本请求、清单加载、资源包下载与加载
 - 可对接远程服务与解密服务
-
-## 运行环境
-
-- Unity 2019.4
-- 平台：UNITY_WEBGL
-- 条件编译：`UNITY_WEBGL && ENABLE_TIKTOK_MINI_GAME`（对齐 GameFrameX 主框架 `MiniGameDefineSymbolHelper` 权威宏）
-- 依赖：YooAsset（国际版 SDK 待接入）
 
 ## 快速开始
 
@@ -45,7 +43,7 @@ GameFrameX 的 YooAsset 抖音小游戏（TikTok MiniGame）运行时组件，�
 
 选择以下任一方式：
 
-1. 编辑 Unity 项目的 `Packages/manifest.json`，添加 `scopedRegistries` 部分：
+1. 编辑 Unity 项目的 `Packages/manifest.json`，添加以下 scoped registry：
    ```json
    {
      "scopedRegistries": [
@@ -58,7 +56,7 @@ GameFrameX 的 YooAsset 抖音小游戏（TikTok MiniGame）运行时组件，�
        }
      ],
      "dependencies": {
-       "com.gameframex.unity.tuyoogame.yooasset.minigame.tiktok": "1.1.1"
+       "com.gameframex.unity.tuyoogame.yooasset.tiktok": "1.1.3"
      }
    }
    ```
@@ -68,59 +66,43 @@ GameFrameX 的 YooAsset 抖音小游戏（TikTok MiniGame）运行时组件，�
 2. 直接在 `manifest.json` 的 `dependencies` 节点下添加以下内容：
    ```json
    {
-      "com.gameframex.unity.tuyoogame.yooasset.minigame.tiktok": "https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.minigame.tiktok.git"
+      "com.gameframex.unity.tuyoogame.yooasset.tiktok": "https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.tiktok.git"
    }
    ```
-3. 在 Unity 的 `Package Manager` 中使用 `Git URL` 的方式添加库，地址为：`https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.minigame.tiktok.git`
+3. 在 Unity 的 **Package Manager** 中使用 **Git URL** 的方式添加库，地址为：`https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.tiktok.git`
 4. 直接下载仓库放置到 Unity 项目的 `Packages` 目录下，会自动加载识别。
-### 安装
-
-编辑 Unity 项目的 `Packages/manifest.json`，添加 `scopedRegistries` 部分：
-
-```json
-{
-  "scopedRegistries": [
-    {
-      "name": "GameFrameX",
-      "url": "https://gameframex.upm.alianblank.uk",
-      "scopes": [
-        "com.gameframex"
-      ]
-    }
-  ]
-}
-```
-
-`scopes` 控制哪些包通过此注册表解析。只有以 `com.gameframex` 开头的包才会从这个注册表获取。
-
-Then add the package to `dependencies`:
-
-```json
-{
-  "dependencies": {
-    "com.gameframex.unity.tuyoogame.yooasset.minigame.tiktok": "1.1.1"
-  }
-}
-```
-
 
 ## 使用示例
 
-> **骨架包**：ByteGame（抖音大陆版）实现已迁移至 `com.gameframex.unity.tuyoogame.yooasset.minigame.douyin`。本包保留给 TikTok **国际版**小游戏实现，运行时代码待接入国际版 SDK。
+骨架包——待国际版 TikTok SDK 确定后补充实现，暂无运行时代码。
 
-1. 通过 GameFrameX/Scripting Define Symbols 菜单启用 `ENABLE_TIKTOK_MINI_GAME` 宏
-2. 通过 `TiktokFileSystemCreater.CreateFileSystemParameters(...)` 生成文件系统参数
-3. 将参数传入 YooAsset 的文件系统创建流程
-4. 按照 YooAsset 的常规流程进行初始化、版本请求、清单加载与资源加载
+## 依赖
 
-## 主要类型
+| 包 | 说明 |
+| --- | --- |
+| `com.gameframex.unity.tuyoogame.yooasset` | YooAsset 核心运行时与 API。 |
 
-- `TiktokFileSystem`：抖音小游戏文件系统实现
-- `TiktokFileSystemCreater`：文件系统参数构建入口
-- `LoadTiktokAssetBundleOperation`：资源包下载与加载操作
-- `UnityTiktokAssetBundleRequestOperation`：基于 TTSDK 的下载请求封装
+## 文档与资源
 
-## 注意事项
+- [官方文档](https://gameframex.doc.alianblank.com)
 
-- 需要设置抖音小游戏的缓存根目录，否则会抛出异常
-- 未配置远程服务时会回退到 Web 服务器路径
+## 社区与支持
+
+![QQ](https://img.shields.io/badge/QQ-467608841%2F233840761-EB1923?style=for-the-badge&logo=qq&logoColor=white)
+[![Bilibili](https://img.shields.io/badge/Bilibili-00A1D6?style=for-the-badge&logo=bilibili&logoColor=white)](https://www.bilibili.com/video/BV1yrpeepEn7)
+[![Gitee](https://img.shields.io/badge/Gitee-C71D23?style=for-the-badge&logo=gitee&logoColor=white)](https://gitee.com/GameFrameX/gameframex)
+[![Discord](https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/VDWUjWMDw9)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GameFrameX/gameframex)
+[<img src="https://cdn.jsdelivr.net/npm/devicon@2/icons/linkedin/linkedin-original.svg" height="28" alt="LinkedIn" />](https://www.linkedin.com/in/alianblank)
+[![Reddit](https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white)](https://www.reddit.com/r/GameFrameX/)
+[![X](https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white)](https://x.com/alian_blank)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCD9QhSFJ5xZkn5NTSV-DVAw)
+[![Bluesky](https://img.shields.io/badge/Bluesky-0285FF?style=for-the-badge&logo=bluesky&logoColor=white)](https://bsky.app/profile/alianblank.bsky.social)
+
+## 更新日志
+
+查看 [Releases](https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.tiktok/releases) 了解更新日志。
+
+## 开源协议
+
+详见 [LICENSE.md](LICENSE.md) 文件。
