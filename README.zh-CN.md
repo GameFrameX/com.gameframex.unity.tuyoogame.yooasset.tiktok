@@ -36,8 +36,8 @@ GameFrameX 的 YooAsset 抖音小游戏（TikTok MiniGame）运行时组件，�
 
 - Unity 2019.4
 - 平台：UNITY_WEBGL
-- 条件编译：DOUYINMINIGAME
-- 依赖：YooAsset、StarkWebGL、TTWebGL
+- 条件编译：`UNITY_WEBGL && ENABLE_TIKTOK_MINI_GAME`（对齐 GameFrameX 主框架 `MiniGameDefineSymbolHelper` 权威宏）
+- 依赖：YooAsset（国际版 SDK 待接入）
 
 ## 快速开始
 
@@ -106,7 +106,9 @@ Then add the package to `dependencies`:
 
 ## 使用示例
 
-1. 确保已接入抖音小游戏 SDK，并启用 `DOUYINMINIGAME` 宏
+> **骨架包**：ByteGame（抖音大陆版）实现已迁移至 `com.gameframex.unity.tuyoogame.yooasset.minigame.douyin`。本包保留给 TikTok **国际版**小游戏实现，运行时代码待接入国际版 SDK。
+
+1. 通过 GameFrameX/Scripting Define Symbols 菜单启用 `ENABLE_TIKTOK_MINI_GAME` 宏
 2. 通过 `TiktokFileSystemCreater.CreateFileSystemParameters(...)` 生成文件系统参数
 3. 将参数传入 YooAsset 的文件系统创建流程
 4. 按照 YooAsset 的常规流程进行初始化、版本请求、清单加载与资源加载

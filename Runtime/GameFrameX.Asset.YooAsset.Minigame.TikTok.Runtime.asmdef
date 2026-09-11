@@ -2,8 +2,6 @@
   "name": "GameFrameX.Asset.YooAsset.Minigame.TikTok.Runtime",
   "rootNamespace": "GameFrameX.Asset.YooAsset.Minigame.TikTok.Runtime",
   "references": [
-    "StarkWebGL",
-    "TTWebGL",
     "YooAsset.Runtime",
     "YooAsset"
   ],
@@ -14,17 +12,6 @@
   "precompiledReferences": [],
   "autoReferenced": true,
   "defineConstraints": [],
-  "versionDefines": [
-    {
-      "name": "com.bytedance.starksdk",
-      "expression": "",
-      "define": "DOUYIN_MINI_GAME"
-    },
-    {
-      "name": "com.bytedance.starksdk",
-      "expression": "",
-      "define": "DOUYINMINIGAME"
-    }
-  ],
+  "versionDefines": [],
   "noEngineReferences": false
 }
