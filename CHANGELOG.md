@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.tiktok/compare/1.1.3...1.2.0) (2026-09-11)
+
+
+### Features
+
+* **refactor:** Provider/Creater/asmdef/Operation 改造 + package.json 调整 ([9f361fa](https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.tiktok/commit/9f361fa5cd409019eb58497d58703f9d234ae7a5))
+
 ## [1.1.3](https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.tiktok/compare/1.1.2...1.1.3) (2026-07-30)
 
 
