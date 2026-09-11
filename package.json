@@ -1,16 +1,16 @@
 {
-  "name": "com.gameframex.unity.tuyoogame.yooasset.minigame.tiktok",
-  "displayName": "Game Frame X YooAsset MiniGame TikTok",
+  "name": "com.gameframex.unity.tuyoogame.yooasset.tiktok",
+  "displayName": "Game Frame X YooAsset TikTok",
   "category": "Game Framework X",
-  "description": "YooAsset TikTok (International) MiniGame support | YooAsset TikTok 国际版小游戏适配",
+  "description": "YooAsset TikTok mini-game FileSystem adapter | YooAsset TikTok 国际版小游戏适配（骨架包，待接国际版 SDK）",
   "version": "1.1.3",
   "unity": "2019.4",
   "keywords": [
     "GameFrameX"
   ],
   "repository": {
-    "name": "com.gameframex.unity.tuyoogame.yooasset.minigame.tiktok",
-    "url": "git+https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.minigame.tiktok.git",
+    "name": "com.gameframex.unity.tuyoogame.yooasset.tiktok",
+    "url": "git+https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.tiktok.git",
     "type": "git"
   },
   "author": {
@@ -31,6 +31,6 @@
     "@semantic-release/git": "^10.0.1"
   },
   "documentationUrl": "https://gameframex.doc.alianblank.com",
-  "changelogUrl": "https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.minigame.tiktok/blob/main/CHANGELOG.md",
-  "licensesUrl": "https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.minigame.tiktok/blob/main/LICENSE.md"
+  "changelogUrl": "https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.tiktok/blob/main/CHANGELOG.md",
+  "licensesUrl": "https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.tiktok/blob/main/LICENSE.md"
 }

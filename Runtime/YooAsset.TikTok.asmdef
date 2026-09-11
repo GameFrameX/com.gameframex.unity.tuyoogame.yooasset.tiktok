@@ -1,6 +1,6 @@
 {
-  "name": "GameFrameX.Asset.YooAsset.Minigame.TikTok.Runtime",
-  "rootNamespace": "GameFrameX.Asset.YooAsset.Minigame.TikTok.Runtime",
+  "name": "YooAsset.TikTok",
+  "rootNamespace": "YooAsset.TikTok",
   "references": [
     "YooAsset.Runtime",
     "YooAsset"
