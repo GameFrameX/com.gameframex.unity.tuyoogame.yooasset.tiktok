@@ -1,8 +1,8 @@
 {
   "name": "com.gameframex.unity.tuyoogame.yooasset.tiktok",
   "displayName": "Game Frame X YooAsset TikTok",
-  "category": "Game Framework X",
-  "description": "YooAsset TikTok (international) mini-game FileSystem adapter skeleton for Unity WebGL — placeholder package reserving the runtime surface for the international TikTok SDK integration. Currently ships only a CroppingHelper stub; the IWebPlayModeFileSystemProvider + IFileSystem implementation will be added once the international TikTok SDK is finalized.\nYooAsset TikTok（国际版）小游戏 WebGL FileSystem 适配骨架包——为国际版 TikTok SDK 接入预留运行时空位，当前仅含 CroppingHelper 占位类，IWebPlayModeFileSystemProvider 与 IFileSystem 实现待国际版 SDK 确定后补齐。\nDocs: https://gameframex.doc.alianblank.com\nAll-in-One Solution for Indie Game Development · Empowering Indie Developers' Dreams\n独立游戏前后端一体化解决方案 · 独立游戏开发者的圆梦大使\n",
+  "category": "Game Frame X",
+  "description": "GameFrameX YooAsset TikTok — international TikTok mini-game FileSystem adapter skeleton for Unity WebGL. Placeholder package reserving the runtime surface for the international TikTok SDK integration; it currently ships only a CroppingHelper stub, and the IWebPlayModeFileSystemProvider and IFileSystem implementation will be added once the international TikTok SDK is finalized. Docs: https://gameframex.doc.alianblank.com\n\nGameFrameX YooAsset TikTok — 国际版 TikTok 小游戏 FileSystem 适配骨架功能包。为国际版 TikTok SDK 接入预留运行时空位，当前仅包含 CroppingHelper 占位类，IWebPlayModeFileSystemProvider 与 IFileSystem 实现待国际版 SDK 确定后补齐。文档：https://gameframex.doc.alianblank.com",
   "version": "1.2.0",
   "unity": "2019.4",
   "keywords": [
