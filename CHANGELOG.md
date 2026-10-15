@@ -1,3 +1,11 @@
+## [1.2.1](https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.tiktok/compare/1.2.0...1.2.1) (2026-10-15)
+
+
+### Bug Fixes
+
+* **runtime:** Preserve 特性改为全限定名 ([20add26](https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.tiktok/commit/20add269a2ca36b175c5b1a60b2eaa8aa924b86c))
+* **runtime:** 清理迁出后遗留的 Operation.meta ([bfa9b1c](https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.tiktok/commit/bfa9b1c4cf5782c6bf3b99810f90d70a0b7e52aa))
+
 # [1.2.0](https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.tiktok/compare/1.1.3...1.2.0) (2026-09-11)
 
 
