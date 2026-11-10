@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.tiktok/compare/1.2.1...1.2.2) (2026-11-10)
+
+
+### Bug Fixes
+
+* **tuyoogame.yooasset.tiktok:** 添加完整 link.xml 防代码裁剪保护 ([a08dad4](https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.tiktok/commit/a08dad4a622b46726bb940f9708f541da114dd3d))
+
 ## [1.2.1](https://github.com/gameframex/com.gameframex.unity.tuyoogame.yooasset.tiktok/compare/1.2.0...1.2.1) (2026-10-15)
 
 
